@@ -47,7 +47,7 @@ function offersHandler() {
 
 <p>Click the button to demonstrate the prompt box.</p>
 
-<button onclick="myFunction2()">Address</button>
+<button class="block" onclick="myFunction2()">Address</button>
 
 <p id="demo"></p>
 
@@ -55,7 +55,7 @@ function offersHandler() {
 
 <p>Alert shit2222.</p>
 
-<button onclick="alertHandler()">Alert</button>
+<button class="block" onclick="alertHandler()">Alert</button>
 
 <p id="alert"></p>
 
@@ -63,7 +63,7 @@ function offersHandler() {
 
 <p>Listtt.</p>
 
-<button onclick="listHandler()">LIST</button>
+<button class="block" onclick="listHandler()">LIST</button>
 
 <p id="list"></p>
 
@@ -71,11 +71,26 @@ function offersHandler() {
 
 <p>OFFERS.</p>
 
-<button onclick="offersHandler()">OFFERS</button>
+<button class="block" onclick="offersHandler()">OFFERS</button>
 
 <p id="offers"></p>  
 
 
 
 </body>
+
+
+<style>
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+</style>
+
 </html>
