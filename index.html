@@ -4,12 +4,12 @@
 
 <p>Addresses</p>
 
-<button onclick="myFunction()">Addresses</button>
+<button onclick="addressFunction()">Addresses</button>
 
 <p id="address"></p>
 
 <script>
-function myFunction() {
+function addressFunction() {
   var person = prompt("{\n  \"type\": \"address\",\n  \"payload\": {\n    \"closeable\": false,\n    \"title\": \"\u041c\u043e\u0438 \u0430\u0434\u0440\u0435\u0441\u0430\",\n    \"data\": [\n      {\n        \"title\": \"\u0410\u043b\u043c\u0430\u0442\u044b\",\n        \"subtitle\": \"\u0433\u043e\u0440\u043e\u0434 \u0440\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f\",\n        \"is_main\": true,\n        \"is_add\": false,\n        \"profile_id\": \"id1\"\n      },\n      {\n        \"title\": \"\u0410\u043b\u043c\u0430\u0442\u044b\",\n        \"subtitle\": \"\u0433\u043e\u0440\u043e\u0434 \u0440\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f\",\n        \"is_main\": false,\n        \"is_add\": false,\n        \"profile_id\": \"id2\"\n      },\n      {\n        \"title\": \"\u0410\u043b\u043c\u0430\u0442\u044b\",\n        \"subtitle\": \"\u0433\u043e\u0440\u043e\u0434 \u0440\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f\",\n        \"is_main\": false,\n        \"is_add\": false,\n        \"profile_id\": \"id3\"\n      },\n      {\n        \"title\": \"\u0410\u043b\u043c\u0430\u0442\u044b\",\n        \"subtitle\": \"\u0433\u043e\u0440\u043e\u0434 \u0440\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f\",\n        \"is_main\": false,\n        \"is_add\": false,\n        \"profile_id\": \"id4\"\n      },\n      {\n        \"is_add\": true\n      }\n    ]\n  }\n}");
   if (person != null) {
     document.getElementById("address").innerHTML =
@@ -19,14 +19,16 @@ function myFunction() {
 </script>
   
   
+  
+  
 <p>Alert</p>
 
-<button onclick="myFunction()">Alert</button>
-
+<button onclick="alertFunction()">Alert</button>
+  
 <p id="alert"></p>
 
 <script>
-function myFunction() {
+function alertFunction() {
   var person = prompt("{\n    \"type\": \"alert\",\n    \"payload\": {\n      \"closable\": false,\n      \"title\": \"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435\",\n      \"message\": \"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u0430\u043c 21 \u0433\u043e\u0434 dnfjksd dslkfj sdklf dsnjklg fnsdk. fhdsjg hsdjk hdsjkkdjsb gkjsdb jdksb hsdjkb fjksd fkdsb fjkdsb jksdb jkdsb fkjsdb fkjsdb fjksdb fkjsdb jkfsdb jfksd\",\n      \"actions\": [\n        {\n          \"title\": \"\u0414\u0430\",\n          \"value\": \"yes\"\n        },\n        {\n          \"title\": \"\u041d\u0415\u0422\",\n          \"value\": \"noooo\"\n        }\n      ]\n    }\n  }\n");
   if (person != null) {
     document.getElementById("alert").innerHTML =
@@ -35,5 +37,8 @@ function myFunction() {
 }
 </script>
 
+  
+  
+  
 </body>
 </html>
