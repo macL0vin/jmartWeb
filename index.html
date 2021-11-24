@@ -40,6 +40,16 @@ function offersHandler() {
   }
 } 
 
+
+function shippingHandler() {
+  var person66 = prompt("{\n  \"type\": \"shipping\",\n  \"payload\": {\n    \"data\": [\n      {\n        \"description\": \"\u0421\u0440.\",\n        \"value\": \"24.11.2021\",\n        \"date\": \"24.11\",\n        \"time_list\": [\n          {\n            \"availability\": true,\n            \"value\": \"10:00 - 14:00\",\n            \"description\": \"\u0434\u043e \u043e\u0431\u0435\u0434\u0430\"\n          },\n          {\n            \"availability\": true,\n            \"value\": \"14:00 - 19:00\",\n            \"description\": \"\u043f\u043e\u0441\u043b\u0435 \u043e\u0431\u0435\u0434\u0430 \"\n          }\n        ]\n      },\n      {\n        \"description\": \"\u0427\u0442.\",\n        \"value\": \"25.11.2021\",\n        \"date\": \"25.11\",\n        \"time_list\": [\n          {\n            \"availability\": true,\n            \"value\": \"10:00 - 14:00\",\n            \"description\": \"\u0434\u043e \u043e\u0431\u0435\u0434\u0430\"\n          },\n          {\n            \"availability\": true,\n            \"value\": \"14:00 - 19:00\",\n            \"description\": \"\u043f\u043e\u0441\u043b\u0435 \u043e\u0431\u0435\u0434\u0430 \"\n          }\n        ]\n      },\n      {\n        \"description\": \"\u041f\u0442.\",\n        \"value\": \"26.11.2021\",\n        \"date\": \"26.11\",\n        \"time_list\": [\n          {\n            \"availability\": true,\n            \"value\": \"10:00 - 14:00\",\n            \"description\": \"\u0434\u043e \u043e\u0431\u0435\u0434\u0430\"\n          },\n          {\n            \"availability\": true,\n            \"value\": \"14:00 - 19:00\",\n            \"description\": \"\u043f\u043e\u0441\u043b\u0435 \u043e\u0431\u0435\u0434\u0430 \"\n          }\n        ]\n      }\n    ],\n    \"selected_data\": {\n      \"date_value\": \"string\",\n      \"time_value\": \"string\"\n    }\n  }\n}");
+  if (person6 != null) {
+    document.getElementById("shipping").innerHTML =
+    "Shipping answer " + person6;
+  }
+} 
+  
+  
 </script>
 
 
@@ -75,6 +85,13 @@ function offersHandler() {
 
 <p id="offers"></p>  
 
+ 
+ 
+<p>Shipping.</p>
+
+<button class="block" onclick="shippingHandler()">Shipping</button>
+
+<p id="shipping"></p>  
 
 
 </body>
