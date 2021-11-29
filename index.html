@@ -49,6 +49,16 @@ function shippingHandler() {
   }
 } 
   
+
+function authHandler() {
+  var person77 = prompt("{\n  \"type\": \"auth\",\n  \"payload\": {}\n}");
+  if (person77 != null) {
+    document.getElementById("auth").innerHTML =
+    "Auth answer " + person77;
+  }
+} 
+  
+
   
 </script>
 
@@ -94,6 +104,42 @@ function shippingHandler() {
 <p id="shipping"></p>  
 
 
+<p>Auth.</p>
+
+<button class="block" onclick="authHandler()">Auth</button>
+
+<p id="auth"></p>  
+
+
+
+<p>Payment - Jysan Card.</p>
+
+<button class="block" onclick="cardHandler()">Jysan Card</button>
+
+<p id="card"></p> 
+
+
+<p>Payment - Credit .</p>
+
+<button class="block" onclick="creditHandler()">Credit</button>
+
+<p id="credit"></p> 
+
+
+<p>Payment - Installment .</p>
+
+<button class="block" onclick="installmentHandler()">Installment</button>
+
+<p id="installment"></p> 
+
+
+<p>Watsapp.</p>
+
+<button class="block" onclick="watsappHandler()">Watsapp</button>
+
+<p id="watsapp"></p>   
+  
+  
 </body>
 
 
