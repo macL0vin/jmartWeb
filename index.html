@@ -77,6 +77,22 @@ function cardHandler() {
 } 
 
   
+function creditHandler() {
+  var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"21\",\n    \"credit_type\": \"1\",\n    \"term\": \"3\"\n  }\n}");
+  if (person77 != null) {
+    document.getElementById("credit").innerHTML =
+    "credit answer " + person77;
+  }
+} 
+  
+  
+function installmentHandler() {
+  var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"29\",\n    \"term\": \"12\"\n  }\n}");
+  if (person77 != null) {
+    document.getElementById("installment").innerHTML =
+    "installment answer " + person77;
+  }
+} 
   
   
 </script>
