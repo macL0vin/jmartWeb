@@ -67,9 +67,9 @@ function watsappHandler() {
   }
 } 
   
-
+  
 function cardHandler() {
-  var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"21\",\n    \"total_amount\": 8235,\n    \"transaction_order_id\": \"13434452211\",\n    \"product_groups\": [\n      {\n        \"delivery_price\": 0,\n        \"items\": [\n          {\n            \"price\": 1635,\n            \"id\": \"547365\",\n            \"name\": \"\u0423\u0441\u0442\u0440\u0438\u0446\u044b tsarskaya \u21162 \u0448\u0442\",\n            \"quantity\": 1\n          },\n          {\n            \"price\": 6600,\n            \"id\": \"601986\",\n            \"name\": \"\u0421\u0442\u0435\u0439\u043a Boszhan rump 1 \u043a\u0433\",\n            \"quantity\": 2\n          }\n        ],\n        \"store\": \"\u0413\u0438\u043f\u0435\u0440\u043c\u0430\u0440\u043a\u0435\u0442 A-Store\"\n      }\n    ]\n  }\n}");
+  var person77 = prompt("{\n    \"type\": \"loan\",\n    \"payload\": {\n      \"application_id\": \"231231313\"\n    }\n  }");
   if (person77 != null) {
     document.getElementById("card").innerHTML =
     "card answer " + person77;
@@ -77,22 +77,40 @@ function cardHandler() {
 } 
 
   
-function creditHandler() {
-  var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"17\",\n    \"credit_type\": \"1\",\n    \"term\": \"3\"\n  }\n}");
-  if (person77 != null) {
-    document.getElementById("credit").innerHTML =
-    "credit answer " + person77;
-  }
-} 
-  
-  
 function installmentHandler() {
-  var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"29\",\n    \"term\": \"12\"\n  }\n}");
+  var person77 = prompt("{\n  \"type\": \"jusan_card\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"total_amount\": 8235,\n    \"transaction_order_id\": \"13434452211\",\n    \"product_groups\": [\n      {\n        \"delivery_amount\": 0,\n        \"items\": [\n          {\n            \"price\": 1635,\n            \"id\": \"547365\",\n            \"name\": \"\u0423\u0441\u0442\u0440\u0438\u0446\u044b tsarskaya \u21162 \u0448\u0442\",\n            \"quantity\": 1\n          },\n          {\n            \"price\": 6600,\n            \"id\": \"601986\",\n            \"name\": \"\u0421\u0442\u0435\u0439\u043a Boszhan rump 1 \u043a\u0433\",\n            \"quantity\": 2\n          }\n        ]\n      }\n    ]\n  }\n}");
   if (person77 != null) {
     document.getElementById("installment").innerHTML =
     "installment answer " + person77;
   }
 } 
+  
+
+// function cardHandler() {
+//   var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"21\",\n    \"total_amount\": 8235,\n    \"transaction_order_id\": \"13434452211\",\n    \"product_groups\": [\n      {\n        \"delivery_price\": 0,\n        \"items\": [\n          {\n            \"price\": 1635,\n            \"id\": \"547365\",\n            \"name\": \"\u0423\u0441\u0442\u0440\u0438\u0446\u044b tsarskaya \u21162 \u0448\u0442\",\n            \"quantity\": 1\n          },\n          {\n            \"price\": 6600,\n            \"id\": \"601986\",\n            \"name\": \"\u0421\u0442\u0435\u0439\u043a Boszhan rump 1 \u043a\u0433\",\n            \"quantity\": 2\n          }\n        ],\n        \"store\": \"\u0413\u0438\u043f\u0435\u0440\u043c\u0430\u0440\u043a\u0435\u0442 A-Store\"\n      }\n    ]\n  }\n}");
+//   if (person77 != null) {
+//     document.getElementById("card").innerHTML =
+//     "card answer " + person77;
+//   }
+// } 
+
+  
+// function creditHandler() {
+//   var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"17\",\n    \"credit_type\": \"1\",\n    \"term\": \"3\"\n  }\n}");
+//   if (person77 != null) {
+//     document.getElementById("credit").innerHTML =
+//     "credit answer " + person77;
+//   }
+// } 
+  
+  
+// function installmentHandler() {
+//   var person77 = prompt("{\n  \"type\": \"payment\",\n  \"payload\": {\n    \"order_id\": \"322567\",\n    \"payment_id\": \"29\",\n    \"term\": \"12\"\n  }\n}");
+//   if (person77 != null) {
+//     document.getElementById("installment").innerHTML =
+//     "installment answer " + person77;
+//   }
+// } 
   
   
 </script>
@@ -153,17 +171,17 @@ function installmentHandler() {
 
 <p id="card"></p> 
 
-
+<!-- 
 <p>Payment - Credit .</p>
 
 <button class="block" onclick="creditHandler()">Credit</button>
 
-<p id="credit"></p> 
+<p id="credit"></p>  -->
 
 
-<p>Payment - Installment .</p>
+<p>Payment - LOAN .</p>
 
-<button class="block" onclick="installmentHandler()">Installment</button>
+<button class="block" onclick="installmentHandler()">LOAN</button>
 
 <p id="installment"></p> 
 
